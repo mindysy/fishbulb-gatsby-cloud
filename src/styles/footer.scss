@@ -1,0 +1,37 @@
+@import "variables";
+
+footer {
+  font-size: $px18;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.call-btn {
+  color: $light-blue;
+  font-size: $px18;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 15px;
+  padding-left: 40px;
+  position: relative;
+  text-decoration: none;
+
+  &:before {
+    background: url("../assets/sprite.png") no-repeat 0 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+    width: 72px;
+    height: 70px;
+  }
+
+  &:hover {
+    color: $light-blue;
+    text-decoration: none;
+  }
+}

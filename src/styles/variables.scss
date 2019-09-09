@@ -1,0 +1,50 @@
+/*** Colors ***/
+$white: #ffffff;
+$black: #373743;
+$grey: #666666;
+$dark-blue: #28344e;
+$light-blue: #00b3e6;
+$light-blue-1: #53caec;
+
+// Shades of blue
+$blue-1: #00a6d6;
+$blue-2: #0095bf;
+$blue-3: #008ab1;
+$blue-4: #007fa2;
+$blue-5: #007596;
+
+// Font Sizes
+$px16: 0.889rem;
+$px18: 1rem;
+$px20: 1.22rem;
+$px22: 1.11rem;
+$px24: 1.33rem;
+$px36: 2rem;
+$px42: 2.33rem;
+$px46: 2.56rem;
+$px48: 2.67rem;
+$px54: 3rem;
+$px64: 3.56rem;
+
+// Background
+.bg-light-blue {
+  background-color: $light-blue-1;
+}
+
+// Buttons
+.btn {
+  color: $white;
+  border: none;
+
+  &-blue {
+    background-color: $light-blue;
+
+    &:hover {
+      background-color: $blue-2;
+    }
+  }
+}
+
+.text-link {
+  color: $light-blue;
+}

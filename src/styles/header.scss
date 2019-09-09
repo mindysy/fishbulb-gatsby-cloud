@@ -1,3 +1,116 @@
-.nav-link {
-  color: #999;
+@import "variables";
+
+.header {
+  background-color: $dark-blue;
+  padding: 1.4rem 0;
+
+  .navbar {
+    padding: 0;
+
+    &-brand {
+    }
+
+    .btn {
+      font-size: $px18;
+    }
+
+    &-collapse {
+      margin-top: 0.5rem;
+    }
+
+    &-light .navbar-toggler {
+      color: rgba(265, 265, 265, 0.8);
+      border-color: rgba(265, 265, 265, 0);
+      outline: none;
+
+      &.collapsed {
+        color: rgba(0, 179, 230, 1);
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,179,230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+      }
+
+      &-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(265,265,265, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    }
+  }
+
+  // Inside the Menu
+  .nav {
+    &-item {
+      a {
+        color: $white;
+
+        &.active,
+        &:hover {
+          color: $light-blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) {
+  .header {
+    .navbar {
+      .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      &-light .navbar-toggler {
+        margin-top: 2rem;
+      }
+    }
+
+    .nav {
+      &-item {
+        a {
+          font-size: $px18;
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .header {
+    .navbar {
+      &-collapse {
+        margin-top: 3.5rem;
+      }
+    }
+
+    .nav {
+      &-item {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    .nav {
+      &-item {
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    .nav {
+      &-item {
+        margin-left: 3.34rem;
+      }
+    }
+  }
 }

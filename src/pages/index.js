@@ -1,14 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+
 import Layout from "../components/layout"
+
+import Banner from "../components/banner"
+import Saying from "../components/client-saying"
+import WhatWeDo from "../components/what-we-do"
 
 const IndexPage = () => {
   return (
     <Layout>
-      <h1>Fishbulb Solutions Inc.</h1>
-      <p>
-        Need a developer? <Link to="/contact">Contact me.</Link>
-      </p>
+      <Banner />
+      <Saying />
+      <WhatWeDo />
     </Layout>
   )
 }
