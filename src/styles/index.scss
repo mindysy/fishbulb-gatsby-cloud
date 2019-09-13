@@ -557,3 +557,17 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.container {
+  &-sm {
+    max-width: 605px;
+  }
+
+  &-md {
+    max-width: 680px;
+  }
+
+  &-lg {
+    max-width: 1400px;
+  }
+}

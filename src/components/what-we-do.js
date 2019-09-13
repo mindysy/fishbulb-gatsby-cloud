@@ -44,7 +44,7 @@ const WhatWeDo = () => {
 
   return (
     <React.Fragment>
-      <Container className="text-center py-5">
+      <Container className="text-center py-5 container-sm">
         <h2>What We Do</h2>
         <p>
           We do custom software development, web design, web development,

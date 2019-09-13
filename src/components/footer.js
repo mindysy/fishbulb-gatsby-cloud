@@ -16,7 +16,7 @@ const Footer = () => {
         }
         file(relativePath: { eq: "assets/say-hi.png" }) {
           childImageSharp {
-            fixed(width: 320) {
+            fixed(width: 426) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <Container className="text-center">
+      <Container className="text-center container-md">
         <div>
           <h2>Meet the Team</h2>
           <p>

@@ -1,0 +1,79 @@
+@import "variables";
+
+.industry {
+  color: $white;
+
+  > .col {
+    height: 435px;
+    position: relative;
+
+    &:hover .industry-img {
+      -webkit-filter: none;
+      filter: none;
+    }
+  }
+
+  &-name {
+    font-weight: 700;
+    padding: 30px 0 0 20px;
+    position: relative;
+    z-index: 9;
+  }
+
+  &-img {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+
+    -webkit-filter: grayscale(0%) brightness(80%) sepia(100%)
+      hue-rotate(-200deg) saturate(500%) contrast(0.8);
+    filter: grayscale(0%) brightness(80%) sepia(100%) hue-rotate(-200deg)
+      saturate(500%) contrast(0.8);
+  }
+
+  // Background colors
+  &-1 {
+    background-color: $light-blue;
+
+    .industry-img {
+      max-width: 195px;
+    }
+  }
+  &-2 {
+    background-color: $blue-1;
+
+    .industry-img {
+      max-width: 143px;
+    }
+  }
+  &-3 {
+    background-color: $blue-2;
+
+    .industry-img {
+      max-width: 138px;
+    }
+  }
+  &-4 {
+    background-color: $blue-3;
+
+    .industry-img {
+      max-width: 187px;
+    }
+  }
+  &-5 {
+    background-color: $blue-4;
+
+    .industry-img {
+      max-width: 209px;
+    }
+  }
+  &-6 {
+    background-color: $blue-5;
+
+    .industry-img {
+      max-width: 208px;
+    }
+  }
+}
