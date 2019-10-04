@@ -248,7 +248,7 @@ h2 {
   font-size: $px36;
 }
 h3 {
-  font-size: $px24;
+  font-size: $px28;
 }
 h4 {
   font-size: $px22;
@@ -560,7 +560,7 @@ pre tt:after {
 
 .container {
   &-sm {
-    max-width: 605px;
+    max-width: 620px;
   }
 
   &-md {
@@ -568,6 +568,10 @@ pre tt:after {
   }
 
   &-lg {
+    max-width: 930px;
+  }
+
+  &-xl {
     max-width: 1400px;
   }
 }

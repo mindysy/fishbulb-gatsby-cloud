@@ -1,0 +1,23 @@
+@import "variables";
+
+.services {
+  &-banner {
+    background-color: $light-blue;
+    color: $white;
+    padding: 50px 0;
+
+    a {
+      color: $white;
+      font-weight: 700;
+    }
+  }
+
+  &-offer {
+    background-color: $grey-1;
+    padding: 50px 0;
+
+    @media (min-width: 1200px) {
+      padding: 85px 0 60px;
+    }
+  }
+}

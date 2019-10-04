@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import "../styles/industries.scss"
 
 const Industries = () => {
@@ -81,49 +81,86 @@ const Industries = () => {
   )
 
   return (
-    <Container className="py-5 container-lg">
+    <Container className="py-5 container-xl">
       <div className="text-center">
         <h2>Industries We've Helped</h2>
         <p>We provide creative solutions for various industries:</p>
       </div>
-      <Row className="industry">
-        <Col className="industry-1">
-          <div className="industry-name">WASTE MANAGEMENT</div>
+      <div className="industry">
+        <div className="industry-item industry-1">
+          <div className="industry-title">
+            WASTE
+            <br />
+            MANAGEMENT
+          </div>
           <div className="industry-img">
             <Img fluid={data.waste.childImageSharp.fluid} />
           </div>
-        </Col>
-        <Col className="industry-2">
-          <div className="industry-name">CHURCHES</div>
+          <ul className="industry-item__list">
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+        <div className="industry-item industry-2">
+          <div className="industry-title">CHURCHES</div>
           <div className="industry-img">
             <Img fluid={data.churches.childImageSharp.fluid} />
           </div>
-        </Col>
-        <Col className="industry-3">
-          <div className="industry-name">DANCE &amp; FITNESS</div>
+          <ul className="industry-item__list">
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+        <div className="industry-item industry-3">
+          <div className="industry-title">DANCE &amp; FITNESS</div>
           <div className="industry-img">
             <Img fluid={data.dance.childImageSharp.fluid} />
           </div>
-        </Col>
-        <Col className="industry-4">
-          <div className="industry-name">MANUFACTURING</div>
+          <ul className="industry-item__list">
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+        <div className="industry-item industry-4">
+          <div className="industry-title">MANUFACTURING</div>
           <div className="industry-img">
             <Img fluid={data.manufacturing.childImageSharp.fluid} />
           </div>
-        </Col>
-        <Col className="industry-5">
-          <div className="industry-name">LOGISTICS</div>
+          <ul className="industry-item__list">
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+        <div className="industry-item industry-5">
+          <div className="industry-title">LOGISTICS</div>
           <div className="industry-img">
             <Img fluid={data.logistics.childImageSharp.fluid} />
           </div>
-        </Col>
-        <Col className="industry-6">
-          <div className="industry-name">ENGINEERING &amp; CONSTRUCTION</div>
+          <ul className="industry-item__list">
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+        <div className="industry-item industry-6">
+          <div className="industry-title">
+            ENGINEERING &amp;
+            <br />
+            CONSTRUCTION
+          </div>
           <div className="industry-img">
             <Img fluid={data.engineering.childImageSharp.fluid} />
           </div>
-        </Col>
-      </Row>
+          <ul className="industry-item__list">
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+      </div>
     </Container>
   )
 }

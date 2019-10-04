@@ -2,13 +2,10 @@
 
 .header {
   background-color: $dark-blue;
-  padding: 1.4rem 0;
+  padding: 1.4rem 0 1.125rem;
 
   .navbar {
     padding: 0;
-
-    &-brand {
-    }
 
     .btn {
       font-size: $px18;
@@ -71,7 +68,7 @@
     .nav {
       &-item {
         a {
-          font-size: $px18;
+          font-size: $px15;
         }
       }
     }
@@ -84,6 +81,10 @@
     .navbar {
       &-collapse {
         margin-top: 3.5rem;
+      }
+
+      &-brand {
+        margin-bottom: -1.4rem;
       }
     }
 

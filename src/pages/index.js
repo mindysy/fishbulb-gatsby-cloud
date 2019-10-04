@@ -6,6 +6,8 @@ import Banner from "../components/banner"
 import Saying from "../components/client-saying"
 import WhatWeDo from "../components/what-we-do"
 import Industries from "../components/industries"
+import OurWork from "../components/our-work"
+import PreFooter from "../components/pre-footer"
 
 const IndexPage = () => {
   return (
@@ -14,6 +16,8 @@ const IndexPage = () => {
       <Saying />
       <WhatWeDo />
       <Industries />
+      <OurWork />
+      <PreFooter />
     </Layout>
   )
 }
