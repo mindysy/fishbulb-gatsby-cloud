@@ -33,7 +33,7 @@ const Banner = () => {
                 for Your Business
               </div>
               <p>We Integrate. We Systemise. We Automate. We Streamline.</p>
-              <Link to="/about" className="btn btn-blue">
+              <Link to="/about" className="btn btn-blue btn-blue-glow">
                 LEARN MORE
               </Link>
             </div>

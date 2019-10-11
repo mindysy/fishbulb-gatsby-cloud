@@ -36,6 +36,15 @@ $px64: 3.56rem;
   background-color: $light-blue-1;
 }
 
+.bg-dark-blue {
+  background-color: $dark-blue-1;
+  color: $white;
+
+  h3 {
+    color: $white;
+  }
+}
+
 // Buttons
 .btn {
   color: $white;
@@ -43,6 +52,19 @@ $px64: 3.56rem;
 
   &-blue {
     background-color: $light-blue;
+
+    &-glow {
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 179, 230, 0.3);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 179, 230, 0.3);
+      box-shadow: 0px 0px 20px 0px rgba(0, 179, 230, 0.3);
+      margin-top: 20px;
+      padding: 0.5rem 0.75rem;
+      width: 200px;
+
+      &:hover {
+        color: $white;
+      }
+    }
 
     &:hover {
       background-color: $blue-2;

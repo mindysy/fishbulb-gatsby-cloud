@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 import { Container, Row, Col } from "react-bootstrap"
 import "../styles/services.scss"
 
-const ServicesPage = () => {
+const EcommercePage = () => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -29,32 +29,23 @@ const ServicesPage = () => {
         <Container className="text-center">
           <Row>
             <Col lg={{ span: 10, offset: 1 }}>
-              <h1>Turn your visitors into customers</h1>
+              <h1>Ecommerce Web Design &amp; Development</h1>
+              <h3>We create custom software that makes your data do more.</h3>
               <div className="services-banner-img">
                 <Img fluid={data.banner.childImageSharp.fluid} />
               </div>
-              <h3>Business Web Design to Make Your Brand Stand Out Online</h3>
-              <p>
-                First impressions are vital. For those who visit your business
-                online, your website is your handshake and your calling card. It
-                shows people who you are, and what you’re made of. It’s also the
-                way repeat customers build a relationship with your brand.
-              </p>
-              <p>
-                <a href="/">LEARN MORE</a>
-              </p>
             </Col>
           </Row>
         </Container>
       </div>
 
-      <Offers />
       <Container className="py-5 text-center">
-        <h3>How Much Does Web Design Cost?</h3>
+        <h3>Here’s what our web applications can do:</h3>
         <p>
-          At Fishbulb Solutions, we pride ourselves on offering affordable web
-          design. We’ve worked with businesses of all kinds to create websites
-          that look great, and work even better.
+          At Fishbulb Solutions, we pride ourselves on offering affordable
+          ecommerce web design &amp; development. We’ve worked with businesses
+          of all kinds to create websites that bring out the best from their
+          products and brands.
         </p>
         <p>
           Our cost depends on the complexity of your needs, and the number of
@@ -65,8 +56,20 @@ const ServicesPage = () => {
         </p>
       </Container>
       <Testimonials />
+      <Offers />
+      <Container fluid className="bg-dark-blue text-center py-5">
+        <h3>We'll Create a Website As Unique As You Are</h3>
+        <div>
+          <a href="/" className="btn btn-blue btn-blue-glow">
+            GET IN TOUCH
+          </a>
+        </div>
+      </Container>
+      <Container className="text-center py-5">
+        <h3>Our Client</h3>
+      </Container>
     </Layout>
   )
 }
 
-export default ServicesPage
+export default EcommercePage

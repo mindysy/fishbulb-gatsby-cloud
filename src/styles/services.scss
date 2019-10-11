@@ -9,6 +9,34 @@
     a {
       color: $white;
       font-weight: 700;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &-img {
+      position: relative;
+      margin-top: -90px;
+      margin-bottom: -30px;
+    }
+
+    @media (min-width: 768px) {
+      padding: 80px 0 65px;
+
+      &-img {
+        margin-top: -140px;
+        margin-bottom: -70px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      padding: 105px 0 65px;
+
+      &-img {
+        margin-top: -170px;
+        margin-bottom: -110px;
+      }
     }
   }
 
@@ -16,8 +44,173 @@
     background-color: $grey-1;
     padding: 50px 0;
 
+    .row {
+      margin-top: 50px;
+
+      > .col-6 {
+        margin-bottom: 30px;
+      }
+    }
+
+    .btn {
+      font-weight: 700;
+      margin-top: 20px;
+      width: 250px;
+    }
+
+    &-list {
+      background-color: $white;
+      border-radius: 10px;
+      font-weight: 700;
+      height: 100%;
+      padding: 30px;
+    }
+
+    &-img {
+      margin: 0 auto 30px;
+      max-height: 128px;
+      max-width: 165px;
+      overflow: hidden;
+
+      .gatsby-image-wrapper {
+        width: 100%;
+      }
+    }
+
     @media (min-width: 1200px) {
       padding: 85px 0 60px;
+    }
+  }
+}
+
+// Carousel Testimonials
+.carousel {
+  margin-top: 80px;
+
+  &-testimonial {
+    background: transparent url("../assets/bg-wave-1.png") no-repeat 0 -320px;
+    background-size: cover;
+  }
+
+  &-item {
+    background-color: $white;
+    padding: 30px;
+
+    &:before {
+      content: "";
+      background-image: url("../assets/icon-quote.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 58px;
+      height: 42px;
+      position: absolute;
+      top: -15px;
+      left: -15px;
+    }
+
+    h3 {
+      color: $light-blue;
+      margin-bottom: 5px;
+    }
+
+    span {
+      color: $black;
+      font-weight: 700;
+    }
+  }
+
+  &-inner {
+    overflow: visible;
+  }
+
+  &-control-prev,
+  &-control-next {
+    width: 35px;
+
+    &-icon {
+      background-image: url("../assets/sprite-arrows.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &-control-prev {
+    left: -10px;
+
+    &-icon {
+      background-position: 0 0;
+    }
+  }
+
+  &-control-next {
+    right: -10px;
+
+    &-icon {
+      background-position: 0 -45px;
+    }
+  }
+
+  &-indicators {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    &-control-prev {
+      left: -30px;
+    }
+
+    &-control-next {
+      right: -30px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    max-width: 825px;
+    margin: 100px auto 0;
+
+    &-item {
+      padding-top: 60px;
+
+      &:before {
+        height: 85px;
+        width: 116px;
+        top: -40px;
+        left: -50px;
+      }
+    }
+
+    &-control-prev,
+    &-control-next {
+      width: 52px;
+
+      &-icon {
+        width: 52px;
+        height: 53px;
+      }
+    }
+
+    &-control-prev {
+      left: -65px;
+    }
+
+    &-control-next {
+      right: -65px;
+
+      &-icon {
+        background-position: 0 -67px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &-control-prev {
+      left: -150px;
+    }
+
+    &-control-next {
+      right: -150px;
     }
   }
 }
