@@ -513,3 +513,10 @@ pre tt:after {
     max-width: 1400px;
   }
 }
+
+.text-white {
+  a,
+  a:hover {
+    color: $white;
+  }
+}

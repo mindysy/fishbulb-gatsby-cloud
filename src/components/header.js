@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import { Nav, Navbar, Container } from "react-bootstrap"
+import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap"
 import "../styles/header.scss"
 
 const Header = () => {
@@ -45,11 +45,26 @@ const Header = () => {
                     Home
                   </Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Link to="/services" activeClassName="active">
-                    Services
-                  </Link>
-                </Nav.Item>
+                <NavDropdown title="Services" id="nav-dropdown">
+                  <NavDropdown.Item>
+                    <Link to="/web-design" activeClassName="active">
+                      Custom Software Development
+                    </Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/#action/3.2">
+                    <Link to="/web-design" activeClassName="active">
+                      Web Design
+                    </Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <Link to="/ecommerce" activeClassName="active">
+                      Web Development
+                    </Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.4">
+                    Filemaker Pro to Web Conversion
+                  </NavDropdown.Item>
+                </NavDropdown>
                 <Nav.Item>
                   <Link to="/clients" activeClassName="active">
                     Clients

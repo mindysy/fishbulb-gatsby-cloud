@@ -1,0 +1,16 @@
+.ecommerce {
+  &-banner {
+    overflow: hidden;
+
+    .services-banner-img {
+      margin-bottom: -120px;
+
+      @media (min-width: 768px) {
+        margin-bottom: -180px;
+      }
+      @media (min-width: 992px) {
+        margin-bottom: -210px;
+      }
+    }
+  }
+}

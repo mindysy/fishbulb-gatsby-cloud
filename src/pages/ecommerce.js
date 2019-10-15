@@ -7,12 +7,13 @@ import Img from "gatsby-image"
 
 import { Container, Row, Col } from "react-bootstrap"
 import "../styles/services.scss"
+import "../styles/ecommerce.scss"
 
 const EcommercePage = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        banner: file(relativePath: { eq: "assets/banner-services.png" }) {
+        banner: file(relativePath: { eq: "assets/banner-ecommerce.png" }) {
           childImageSharp {
             fluid(maxWidth: 946, quality: 100) {
               ...GatsbyImageSharpFluid
@@ -25,7 +26,7 @@ const EcommercePage = () => {
 
   return (
     <Layout>
-      <div className="services-banner">
+      <div className="services-banner ecommerce-banner">
         <Container className="text-center">
           <Row>
             <Col lg={{ span: 10, offset: 1 }}>
@@ -40,23 +41,37 @@ const EcommercePage = () => {
       </div>
 
       <Container className="py-5 text-center">
-        <h3>Here’s what our web applications can do:</h3>
+        <h3>What we can create</h3>
         <p>
-          At Fishbulb Solutions, we pride ourselves on offering affordable
-          ecommerce web design &amp; development. We’ve worked with businesses
-          of all kinds to create websites that bring out the best from their
-          products and brands.
-        </p>
-        <p>
-          Our cost depends on the complexity of your needs, and the number of
-          features your website requires. Entry level websites start at $8k,
-          while most professional web design costs close to $12k.{" "}
-          <a href="/">Contact us today</a> to find out how much it would cost
-          for us to build the ideal website for your business.
+          Filemaker Pro is a powerful cross-platform database development
+          program. FileMaker developers like us love FileMaker Pro because it's
+          fast, flexible and robust. Here are some things we can do with
+          FileMaker development:
         </p>
       </Container>
+
+      <Container fluid className="bg-light-blue py-5 text-center">
+        <div className="container-md mx-auto text-white">
+          <h3>Here’s what our web applications can do:</h3>
+          <p>
+            At Fishbulb Solutions, we pride ourselves on offering affordable
+            ecommerce web design &amp; development. We’ve worked with businesses
+            of all kinds to create websites that bring out the best from their
+            products and brands.
+          </p>
+          <p>
+            Our cost depends on the complexity of your needs, and the number of
+            features your website requires. Entry level websites start at $8k,
+            while most professional web design costs close to $12k.{" "}
+            <a href="/">Contact us today</a> to find out how much it would cost
+            for us to build the ideal website for your business.
+          </p>
+        </div>
+      </Container>
+
       <Testimonials />
       <Offers />
+
       <Container fluid className="bg-dark-blue text-center py-5">
         <h3>We'll Create a Website As Unique As You Are</h3>
         <div>
