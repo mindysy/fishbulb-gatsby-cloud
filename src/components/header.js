@@ -49,7 +49,7 @@ const Header = () => {
                   <NavDropdown.Item href="/#action/3.2">
                     Custom Software Development
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/#action/3.2">
+                  <NavDropdown.Item>
                     <Link to="/web-design" activeClassName="active">
                       Web Design
                     </Link>

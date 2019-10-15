@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import { Container } from "react-bootstrap"
 import "../styles/client-saying.scss"
 
-import AOS from "aos" //import "../../node_modules/aos/dist/aos.js"
+import AOS from "../../node_modules/aos/dist/aos.js"
 import "../../node_modules/aos/dist/aos.css" // You can also use <link> for styles
 
 AOS.init()
