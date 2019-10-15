@@ -5,8 +5,10 @@ import Img from "gatsby-image"
 import { Container } from "react-bootstrap"
 import "../styles/client-saying.scss"
 
-import "../../node_modules/aos/dist/aos.js"
-import "../../node_modules/aos/dist/aos.css"
+import AOS from "aos" //import "../../node_modules/aos/dist/aos.js"
+import "../../node_modules/aos/dist/aos.css" // You can also use <link> for styles
+
+AOS.init()
 
 const Saying = () => {
   const data = useStaticQuery(

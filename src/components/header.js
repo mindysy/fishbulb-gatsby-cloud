@@ -46,10 +46,8 @@ const Header = () => {
                   </Link>
                 </Nav.Item>
                 <NavDropdown title="Services" id="nav-dropdown">
-                  <NavDropdown.Item>
-                    <Link to="/web-design" activeClassName="active">
-                      Custom Software Development
-                    </Link>
+                  <NavDropdown.Item href="/#action/3.2">
+                    Custom Software Development
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/#action/3.2">
                     <Link to="/web-design" activeClassName="active">
