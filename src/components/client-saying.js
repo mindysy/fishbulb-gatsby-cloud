@@ -1,14 +1,11 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import AOS from "../../node_modules/aos/dist/aos.js"
 
 import { Container } from "react-bootstrap"
 import "../styles/client-saying.scss"
-
-import AOS from "../../node_modules/aos/dist/aos.js"
 import "../../node_modules/aos/dist/aos.css" // You can also use <link> for styles
-
-AOS.init()
 
 const Saying = () => {
   const data = useStaticQuery(
@@ -24,6 +21,8 @@ const Saying = () => {
       }
     `
   )
+
+  AOS.init()
 
   return (
     <Container fluid className="bg-light-blue text-center clearfix pt-5">
@@ -55,7 +54,7 @@ const Saying = () => {
         <div
           className="clearfix aos-init tooltip tooltip--3 tooltip--down tooltip--med"
           data-aos="fade-in"
-          data-aos-offset="200"
+          data-aos-offset="300"
         >
           “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -71,7 +70,7 @@ const Saying = () => {
         <div
           className="clearfix aos-init tooltip tooltip--4 tooltip--left tooltip--big"
           data-aos="fade-in"
-          data-aos-offset="500"
+          data-aos-offset="400"
         >
           “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -83,7 +82,7 @@ const Saying = () => {
         <div
           className="clearfix aos-init tooltip tooltip--5 tooltip--right tooltip--small"
           data-aos="fade-in"
-          data-aos-offset="500"
+          data-aos-offset="450"
         >
           “Lorem ipsum dolor sit amet, consectetuer adipiscing elit.”
           <span>John Micheal Doe</span>

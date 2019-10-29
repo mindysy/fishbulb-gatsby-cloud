@@ -1,3 +1,5 @@
+@import "variables";
+
 .ecommerce {
   &-banner {
     overflow: hidden;
@@ -11,6 +13,101 @@
       @media (min-width: 992px) {
         margin-bottom: -210px;
       }
+    }
+  }
+}
+
+.slick {
+  &-item {
+    overflow: hidden;
+    width: 33%;
+
+    > div {
+      height: 310px;
+      margin: 30px auto 50px;
+      padding: 15px;
+      width: 70%;
+      -webkit-box-shadow: 8px 8px 20px 5px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 8px 8px 20px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: 8px 8px 20px 5px rgba(0, 0, 0, 0.5);
+
+      @media (min-width: 768px) {
+        width: 80%;
+        height: 340px;
+      }
+    }
+  }
+
+  &-img {
+    display: flex;
+    height: 167px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-arrow {
+    display: block;
+  }
+
+  &-next,
+  &-prev {
+    width: 52px;
+    height: 53px;
+    background-image: url("../assets/sprite-arrows.png");
+    background-repeat: no-repeat;
+    opacity: 0.75;
+
+    &:before {
+      content: "";
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      background-image: url("../assets/sprite-arrows.png");
+      opacity: 1;
+    }
+  }
+
+  &-prev {
+    background-position: 0 0;
+    left: -10px;
+
+    @media (min-width: 768px) {
+      left: -45px;
+    }
+    @media (min-width: 992px) {
+      left: -20px;
+    }
+    @media (min-width: 1200px) {
+      left: -30px;
+    }
+    @media (min-width: 1400px) {
+      left: -40px;
+    }
+  }
+
+  &-next {
+    background-position: 0 -67px;
+    right: -10px;
+
+    &:focus,
+    &:hover {
+      background-position: 0 -67px;
+    }
+
+    @media (min-width: 768px) {
+      right: -45px;
+    }
+    @media (min-width: 992px) {
+      right: -20px;
+    }
+    @media (min-width: 1200px) {
+      right: -30px;
+    }
+    @media (min-width: 1400px) {
+      right: -40px;
     }
   }
 }

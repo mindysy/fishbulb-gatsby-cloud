@@ -21,7 +21,7 @@ const PreFooter = () => {
   )
 
   return (
-    <Container className="text-center container-md">
+    <Container className="text-center container-md pt-5">
       <div>
         <h2>Meet the Team</h2>
         <p>

@@ -1,11 +1,15 @@
-import React from "react"
+import React, { Component } from "react"
+import Slider from "react-slick"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Offers from "../components/offers"
 import Testimonials from "../components/testimonials"
 import Img from "gatsby-image"
-
 import { Container, Row, Col } from "react-bootstrap"
+
+// Import css files
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import "../styles/services.scss"
 import "../styles/ecommerce.scss"
 
@@ -20,9 +24,169 @@ const EcommercePage = () => {
             }
           }
         }
+        cart: file(relativePath: { eq: "assets/icon-cart.png" }) {
+          childImageSharp {
+            fixed(width: 133) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        gear: file(relativePath: { eq: "assets/icon-gear.png" }) {
+          childImageSharp {
+            fixed(width: 102) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        package: file(relativePath: { eq: "assets/icon-package.png" }) {
+          childImageSharp {
+            fixed(width: 159) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        wsp: file(relativePath: { eq: "assets/logo-wsp.png" }) {
+          childImageSharp {
+            fixed(width: 159) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        waterman: file(relativePath: { eq: "assets/logo-waterman.png" }) {
+          childImageSharp {
+            fixed(width: 186) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        tresillian: file(relativePath: { eq: "assets/logo-tresillian.png" }) {
+          childImageSharp {
+            fixed(width: 186) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        cello: file(relativePath: { eq: "assets/logo-cello.png" }) {
+          childImageSharp {
+            fixed(width: 128) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        ets: file(relativePath: { eq: "assets/logo-ets.png" }) {
+          childImageSharp {
+            fixed(width: 159) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `
   )
+
+  class MultipleItems extends Component {
+    render() {
+      const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      }
+      return (
+        <div>
+          <Slider {...settings}>
+            <div className="slick-item">
+              <div>
+                <div className="slick-img">
+                  <Img fixed={data.cart.childImageSharp.fixed} />
+                </div>
+                <p>User-friendly shopping carts and payment gateways</p>
+              </div>
+            </div>
+            <div className="slick-item">
+              <div>
+                <div className="slick-img">
+                  <Img fixed={data.package.childImageSharp.fixed} />
+                </div>
+                <p>
+                  Sales and shipping configuration for both physical and digital
+                  products
+                </p>
+              </div>
+            </div>
+            <div className="slick-item">
+              <div>
+                <div className="slick-img">
+                  <Img fixed={data.gear.childImageSharp.fixed} />
+                </div>
+                <p>
+                  Integration into back end order &amp; inventory managment
+                  systems, CRMs, ERPs &amp; more
+                </p>
+              </div>
+            </div>
+            <div className="slick-item">
+              <div>
+                <div className="slick-img">
+                  <Img fixed={data.cart.childImageSharp.fixed} />
+                </div>
+                <p>User-friendly shopping carts and payment gateways</p>
+              </div>
+            </div>
+            <div className="slick-item">
+              <div>
+                <div className="slick-img">
+                  <Img fixed={data.package.childImageSharp.fixed} />
+                </div>
+                <p>
+                  Sales and shipping configuration for both physical and digital
+                  products
+                </p>
+              </div>
+            </div>
+            <div className="slick-item">
+              <div>
+                <div className="slick-img">
+                  <Img fixed={data.gear.childImageSharp.fixed} />
+                </div>
+                <p>
+                  Integration into back end order &amp; inventory managment
+                  systems, CRMs, ERPs &amp; more
+                </p>
+              </div>
+            </div>
+          </Slider>
+        </div>
+      )
+    }
+  }
 
   return (
     <Layout>
@@ -48,8 +212,8 @@ const EcommercePage = () => {
           fast, flexible and robust. Here are some things we can do with
           FileMaker development:
         </p>
+        <MultipleItems />
       </Container>
-
       <Container fluid className="bg-light-blue py-5 text-center">
         <div className="container-md mx-auto text-white">
           <h3>Here’s what our web applications can do:</h3>
@@ -68,10 +232,8 @@ const EcommercePage = () => {
           </p>
         </div>
       </Container>
-
       <Testimonials />
       <Offers />
-
       <Container fluid className="bg-dark-blue text-center py-5">
         <h3>We'll Create a Website As Unique As You Are</h3>
         <div>
@@ -82,6 +244,23 @@ const EcommercePage = () => {
       </Container>
       <Container className="text-center py-5">
         <h3>Our Client</h3>
+        <Row className="align-items-center">
+          <Col>
+            <Img fixed={data.wsp.childImageSharp.fixed} />
+          </Col>
+          <Col>
+            <Img fixed={data.waterman.childImageSharp.fixed} />
+          </Col>
+          <Col>
+            <Img fixed={data.tresillian.childImageSharp.fixed} />
+          </Col>
+          <Col>
+            <Img fixed={data.cello.childImageSharp.fixed} />
+          </Col>
+          <Col>
+            <Img fixed={data.ets.childImageSharp.fixed} />
+          </Col>
+        </Row>
       </Container>
     </Layout>
   )
