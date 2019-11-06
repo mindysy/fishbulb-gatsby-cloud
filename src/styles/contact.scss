@@ -1,0 +1,82 @@
+@import "variables";
+
+.contact {
+  background: $grey-1 url("../assets/bg-contact.png") no-repeat center top;
+  background-size: 100% 900px;
+  padding-top: 50px;
+
+  @media (min-width: 768px) {
+    padding-top: 150px;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+
+  &-content {
+    p {
+      color: $black;
+    }
+  }
+
+  &-container {
+    padding: 30px;
+  }
+
+  &-form {
+    background-color: $white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    button {
+      width: 350px;
+    }
+
+    input {
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      height: 300px;
+      resize: none;
+    }
+  }
+
+  &-director {
+    h3 {
+      color: $light-blue;
+      margin: 50px 0 0;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &-office {
+    background-color: $white;
+    border-radius: 5px;
+    color: $black;
+    overflow: hidden;
+    text-align: center;
+
+    h3 {
+      background-color: $light-blue;
+      color: $white;
+      margin-bottom: 0;
+      padding: 20px 15px;
+    }
+
+    h6 {
+      color: $light-blue;
+      margin-bottom: 0;
+    }
+
+    &-details {
+      align-items: center;
+      display: flex;
+      height: 250px;
+      justify-content: center;
+    }
+  }
+}
