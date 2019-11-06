@@ -30,16 +30,25 @@
     margin-bottom: 30px;
 
     button {
-      width: 350px;
+      float: right;
+      width: 250px;
     }
 
     input {
       margin-bottom: 10px;
+      height: 45px;
     }
 
     textarea {
       height: 300px;
       resize: none;
+    }
+
+    input,
+    textarea {
+      border-color: $grey-1;
+      border-radius: 8px;
+      font-size: $px16;
     }
   }
 
@@ -47,6 +56,10 @@
     h3 {
       color: $light-blue;
       margin: 50px 0 0;
+
+      @media (min-width: 992px) {
+        margin-top: 80px;
+      }
     }
     span {
       font-weight: bold;
@@ -67,7 +80,7 @@
       padding: 20px 15px;
     }
 
-    h6 {
+    h5 {
       color: $light-blue;
       margin-bottom: 0;
     }

@@ -19,25 +19,45 @@ const ContactPage = () => {
         <Container className="contact-container">
           <div className="contact-form">
             <Row>
-              <Col className="p-5" lg="8">
+              <Col className="py-5 pl-5 pr-3" lg="7" xl="8">
                 <h3>Send Us The Details Online</h3>
                 <Form>
                   <Form.Row>
-                    <Form.Group as={Col} controlId="formGridName">
-                      <Form.Control type="text" placeholder="Name" />
+                    <Form.Group
+                      as={Col}
+                      sm="12"
+                      md="6"
+                      controlId="formGridName"
+                    >
+                      <Form.Control type="text" placeholder="Name" required />
                     </Form.Group>
 
-                    <Form.Group as={Col} controlId="formGridEmail">
-                      <Form.Control type="text" placeholder="Email" />
+                    <Form.Group
+                      as={Col}
+                      sm="12"
+                      md="6"
+                      controlId="formGridEmail"
+                    >
+                      <Form.Control type="text" placeholder="Email" required />
                     </Form.Group>
                   </Form.Row>
 
                   <Form.Row>
-                    <Form.Group as={Col} controlId="formGridPhone">
+                    <Form.Group
+                      as={Col}
+                      sm="12"
+                      md="6"
+                      controlId="formGridPhone"
+                    >
                       <Form.Control type="text" placeholder="Phone" />
                     </Form.Group>
 
-                    <Form.Group as={Col} controlId="formGridCompany">
+                    <Form.Group
+                      as={Col}
+                      sm="12"
+                      md="6"
+                      controlId="formGridCompany"
+                    >
                       <Form.Control type="text" placeholder="Company" />
                     </Form.Group>
                   </Form.Row>
@@ -46,23 +66,19 @@ const ContactPage = () => {
                     <Form.Control as="textarea" placeholder="Message" />
                   </Form.Group>
 
-                  <Button
-                    variant="primary"
-                    type="submit"
-                    className="btn-blue btn-blue-glow"
-                  >
+                  <Button type="submit" className="btn-blue btn-blue-glow">
                     SEND
                   </Button>
                 </Form>
               </Col>
-              <Col className="p-5" lg="4">
+              <Col className="p-5" lg="5" xl="4">
                 <h3>
                   Let Us Know
                   <br />
                   How We Can Help
                 </h3>
                 <p>
-                  Char to out director Andrew about your project today. He's
+                  Chat to out director Andrew about your project today. He's
                   always keen for a chat!
                 </p>
                 <div className="contact-director">
@@ -75,18 +91,18 @@ const ContactPage = () => {
             </Row>
           </div>
           <Row>
-            <Col>
+            <Col xs="12" lg="6">
               <div className="contact-office">
                 <h3>Sydney Head Office</h3>
                 <div className="contact-office-details">
                   <div>
-                    <h6>ADDRESS</h6>
+                    <h5>ADDRESS</h5>
                     <p>
                       Level 32, 101 Miller Street
                       <br />
                       North Sydney NSW 2060
                     </p>
-                    <h6>PHONE</h6>
+                    <h5>PHONE</h5>
                     <span>
                       <a href="tel:0290031015">(02) 9003 1015</a>
                     </span>
@@ -94,12 +110,12 @@ const ContactPage = () => {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col xs="12" lg="6">
               <div className="contact-office">
                 <h3>Cebu Development Office</h3>
                 <div className="contact-office-details">
                   <div>
-                    <h6>ADDRESS</h6>
+                    <h5>ADDRESS</h5>
                     <p>
                       Unit 19U, Avenir Bldg.,
                       <br />
