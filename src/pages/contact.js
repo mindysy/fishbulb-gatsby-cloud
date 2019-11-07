@@ -71,7 +71,7 @@ const ContactPage = () => {
                   </Button>
                 </Form>
               </Col>
-              <Col className="p-5" lg="5" xl="4">
+              <Col className="p-5 contact-info" lg="5" xl="4">
                 <h3>
                   Let Us Know
                   <br />
