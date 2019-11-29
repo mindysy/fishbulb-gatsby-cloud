@@ -282,7 +282,7 @@ ul {
   list-style-image: none;
 }
 ol {
-  margin-left: 1.45rem;
+  margin-left: 3rem;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -290,8 +290,35 @@ ol {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  list-style-position: outside;
-  list-style-image: none;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+
+  @media (min-width: 768px) {
+    margin-left: 1.45rem;
+  }
+
+  li {
+    counter-increment: my-awesome-counter;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+
+    &:before {
+      content: counter(my-awesome-counter);
+      color: $blue;
+      border: 3px solid $blue;
+      border-radius: 30px;
+      font-size: $px20;
+      font-weight: bold;
+      line-height: 1.3rem;
+      position: absolute;
+      left: -45px;
+      top: 5px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+  }
 }
 dl,
 dd,
@@ -519,4 +546,8 @@ pre tt:after {
   a:hover {
     color: $white;
   }
+}
+
+.text-blue {
+  color: $blue;
 }

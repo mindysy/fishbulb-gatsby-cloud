@@ -46,8 +46,10 @@ const Header = () => {
                   </Link>
                 </Nav.Item>
                 <NavDropdown title="Services" id="nav-dropdown">
-                  <NavDropdown.Item href="/#action/3.2">
-                    Custom Software Development
+                  <NavDropdown.Item>
+                    <Link to="/custom-development" activeClassName="active">
+                      Custom Software Development
+                    </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link to="/web-design" activeClassName="active">
@@ -57,6 +59,11 @@ const Header = () => {
                   <NavDropdown.Item>
                     <Link to="/web-development" activeClassName="active">
                       Web Development
+                    </Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <Link to="/app-development" activeClassName="active">
+                      Application Development
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>

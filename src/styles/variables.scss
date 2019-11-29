@@ -3,6 +3,7 @@ $white: #ffffff;
 $black: #373743;
 $grey: #666666;
 $grey-1: #e5e6e7;
+$blue: #2e86de;
 $dark-blue: #28344e;
 $dark-blue-1: #27344d;
 $light-blue: #00b3e6;
@@ -45,6 +46,10 @@ $px64: 3.56rem;
   }
 }
 
+.bg-img-lightblue {
+  background: transparent url("../assets/bg-blur-lightblue.png") repeat-x 0 0;
+}
+
 // Buttons
 .btn {
   color: $white;
@@ -68,6 +73,7 @@ $px64: 3.56rem;
 
     &:hover {
       background-color: $blue-2;
+      color: $white;
     }
   }
 }
