@@ -214,6 +214,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  padding-top: 102px;
 }
 img {
   max-width: 100%;
@@ -426,6 +427,8 @@ li *:last-child {
   margin-bottom: 0;
 }
 p {
+  line-height: 1.75rem;
+
   a {
     color: $light-blue;
 

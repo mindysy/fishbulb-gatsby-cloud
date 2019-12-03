@@ -33,21 +33,27 @@ $px54: 3rem;
 $px64: 3.56rem;
 
 // Background
-.bg-light-blue {
-  background-color: $light-blue-1;
-}
-
-.bg-dark-blue {
-  background-color: $dark-blue-1;
-  color: $white;
-
-  h3 {
-    color: $white;
+.bg {
+  &-light-blue {
+    background-color: $light-blue-1;
   }
-}
 
-.bg-img-lightblue {
-  background: transparent url("../assets/bg-blur-lightblue.png") repeat-x 0 0;
+  &-dark-blue {
+    background-color: $dark-blue-1;
+    color: $white;
+
+    h3 {
+      color: $white;
+    }
+  }
+
+  &-grey {
+    background-color: $grey-1;
+  }
+
+  &-img-lightblue {
+    background: transparent url("../assets/bg-blur-lightblue.png") repeat-x 0 0;
+  }
 }
 
 // Buttons

@@ -108,6 +108,20 @@
   }
 }
 
+@media (min-width: 992px) {
+  .streamline {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .streamline {
+    bottom: 100px;
+  }
+}
+
 // Carousel Testimonials
 .carousel {
   margin-top: 80px;

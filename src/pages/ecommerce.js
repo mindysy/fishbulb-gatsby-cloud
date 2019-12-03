@@ -47,6 +47,20 @@ const EcommercePage = () => {
             }
           }
         }
+        gadgets: file(relativePath: { eq: "assets/icon-screens.png" }) {
+          childImageSharp {
+            fixed(width: 194) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        password: file(relativePath: { eq: "assets/icon-password.png" }) {
+          childImageSharp {
+            fixed(width: 151) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `
   )
@@ -54,7 +68,7 @@ const EcommercePage = () => {
   class MultipleItems extends Component {
     render() {
       const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -122,34 +136,28 @@ const EcommercePage = () => {
             <div className="slick-item">
               <div>
                 <div className="slick-img">
-                  <Img fixed={data.cart.childImageSharp.fixed} />
-                </div>
-                <p>User-friendly shopping carts and payment gateways</p>
-              </div>
-            </div>
-            <div className="slick-item">
-              <div>
-                <div className="slick-img">
-                  <Img fixed={data.package.childImageSharp.fixed} />
+                  <Img fixed={data.gadgets.childImageSharp.fixed} />
                 </div>
                 <p>
-                  Sales and shipping configuration for both physical and digital
-                  products
+                  A beautiful, responsive experience so customers can purchase
+                  on the go
                 </p>
               </div>
             </div>
             <div className="slick-item">
               <div>
                 <div className="slick-img">
-                  <Img fixed={data.gear.childImageSharp.fixed} />
+                  <Img fixed={data.password.childImageSharp.fixed} />
                 </div>
-                <p>
-                  Integration into back end order &amp; inventory managment
-                  systems, CRMs, ERPs &amp; more
-                </p>
+                <p>Logins, password gateways, and mailing list management</p>
               </div>
             </div>
           </Slider>
+          <div className="mt-3">
+            <a href="/contact" className="btn btn-blue btn-blue-glow">
+              GET IN TOUCH
+            </a>
+          </div>
         </div>
       )
     }
@@ -204,7 +212,7 @@ const EcommercePage = () => {
       <Container fluid className="bg-dark-blue text-center py-5">
         <h3>We'll Create a Website As Unique As You Are</h3>
         <div>
-          <a href="/" className="btn btn-blue btn-blue-glow">
+          <a href="/contact" className="btn btn-blue btn-blue-glow">
             GET IN TOUCH
           </a>
         </div>

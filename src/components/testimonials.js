@@ -21,7 +21,7 @@ const Testimonial = () => {
   )
 
   return (
-    <div className="carousel-testimonial py-5">
+    <div className="carousel-testimonial py-5 mb-5">
       <Container>
         <div className="text-center container-sm mx-auto">
           <h3>Who We’ve Helped</h3>

@@ -51,11 +51,11 @@ const Header = () => {
                       Custom Software Development
                     </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item>
+                  {/* <NavDropdown.Item>
                     <Link to="/web-design" activeClassName="active">
                       Web Design
                     </Link>
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                   <NavDropdown.Item>
                     <Link to="/web-development" activeClassName="active">
                       Web Development
@@ -71,20 +71,20 @@ const Header = () => {
                       Ecommerce
                     </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.4">
+                  {/* <NavDropdown.Item href="#action/3.4">
                     Filemaker Pro to Web Conversion
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                 </NavDropdown>
-                <Nav.Item>
+                {/* <Nav.Item>
                   <Link to="/clients" activeClassName="active">
-                    Clients
+                    Projects
                   </Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Link to="/blog" activeClassName="active">
                     Blog
                   </Link>
-                </Nav.Item>
+                </Nav.Item> */}
                 <Nav.Item>
                   {/* <Nav.Link href="/about">About</Nav.Link> */}
                   <Link to="/about" activeClassName="active">

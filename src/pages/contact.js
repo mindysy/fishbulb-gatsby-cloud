@@ -98,7 +98,7 @@ const ContactPage = () => {
                   <div>
                     <h5>ADDRESS</h5>
                     <p>
-                      Level 32, 101 Miller Street
+                      101 Miller Street
                       <br />
                       North Sydney NSW 2060
                     </p>

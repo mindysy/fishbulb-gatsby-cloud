@@ -37,6 +37,11 @@
     a {
       color: $white;
       font-weight: 700;
+
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
     }
 
     @media (min-width: 768px) {

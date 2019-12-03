@@ -87,9 +87,6 @@ const Testimonial = () => {
             </div>
           </Col>
         </Row>
-        <Link to="/about" className="btn btn-blue btn-blue-glow">
-          GET IN TOUCH
-        </Link>
       </Container>
     </div>
   )
