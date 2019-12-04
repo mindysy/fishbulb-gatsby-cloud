@@ -199,21 +199,23 @@ const WhatWeDo = () => {
             What is Custom Software Development, and Why Would I Need It?
           </h3>
           <Row>
-            <Col lg={6} xl={7}>
+            <Col lg={6} xl={6} className="mt-4">
               <Img fluid={data.csd.childImageSharp.fluid} />
             </Col>
-            <Col lg={6} xl={5}>
+            <Col lg={6} xl={6} className="mt-3">
               <p>
                 Have you ever needed to make a piece of off-the-shelf software
                 perform a function it just wasn’t made to do? It’s frustrating,
-                slow, and hard to reach the result you need. Custom software
-                development means we create software that does exactly what you
-                need it do, with all the functionality your business requires.
-                From boosting staff productivity and reducing key person risk,
-                to decision making and customer satisfaction, bespoke software
-                can help transform your business for the better. Your objectives
-                are our objectives, and we’ll create the solution you need in
-                order to meet them.
+                slow, and hard to reach the result you need.
+              </p>
+              <p>
+                Custom software development means we create software that does
+                exactly what you need it do, with all the functionality your
+                business requires. From boosting staff productivity and reducing
+                key person risk, to decision making and customer satisfaction,
+                bespoke software can help transform your business for the
+                better. Your objectives are our objectives, and we’ll create the
+                solution you need in order to meet them.
               </p>
             </Col>
           </Row>
