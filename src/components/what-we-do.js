@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-
 import { Container, Row, Col } from "react-bootstrap"
 
 const WhatWeDo = () => {
@@ -57,7 +56,7 @@ const WhatWeDo = () => {
           <Col xs={12} lg={6} className="pl-0">
             <Img fluid={data.customSoftware.childImageSharp.fluid} />
           </Col>
-          <Col xs={12} lg={6} xl={4}>
+          <Col xs={12} lg={6} xl={4} className="pt-5 pt-lg-0">
             <h3>Custom Software Development</h3>
             <p>
               Bespoke software development provides your business with the tools
@@ -75,7 +74,12 @@ const WhatWeDo = () => {
           <Col xs={12} lg={{ span: 6, order: 2 }} className="pr-0">
             <Img fluid={data.webDevelopment.childImageSharp.fluid} />
           </Col>
-          <Col xs={12} lg={{ span: 6, order: 1 }} xl={{ offset: 2 }}>
+          <Col
+            xs={12}
+            lg={{ span: 6, order: 1 }}
+            xl={{ offset: 2 }}
+            className="pt-4 pb-5 py-lg-0"
+          >
             <h3>Web Development</h3>
             <p>
               Custom web development turns your visitors into customers.
@@ -93,7 +97,7 @@ const WhatWeDo = () => {
           <Col xs={12} lg={6} className="pl-0">
             <Img fluid={data.webDesign.childImageSharp.fluid} />
           </Col>
-          <Col xs={12} lg={6} xl={4}>
+          <Col xs={12} lg={6} xl={4} className="pt-5 pt-lg-0">
             <h3>Web Design</h3>
             <p>
               Great business site design makes your brand stand out online. We
@@ -112,7 +116,12 @@ const WhatWeDo = () => {
           <Col xs={12} lg={{ span: 6, order: 2 }} className="pr-0">
             <Img fluid={data.eCommerce.childImageSharp.fluid} />
           </Col>
-          <Col xs={12} lg={{ span: 6, order: 1 }} xl={{ offset: 2 }}>
+          <Col
+            xs={12}
+            lg={{ span: 6, order: 1 }}
+            xl={{ offset: 2 }}
+            className="pt-4 pb-5 py-lg-0"
+          >
             <h3>Ecommerce Web Design &amp; Development</h3>
             <p>
               Expert ecommerce website development makes it easy to do business
@@ -129,7 +138,7 @@ const WhatWeDo = () => {
           <Col xs={12} lg={6} className="pl-0">
             <Img fluid={data.webDesign.childImageSharp.fluid} />
           </Col>
-          <Col xs={12} lg={6} xl={4}>
+          <Col xs={12} lg={6} xl={4} className="py-5 py-lg-0">
             <h3>Filemaker Pro to Web Conversion</h3>
             <p>We are experts at converting Filemaker Pro products to web.</p>
             <Link to="/about" className="text-link">

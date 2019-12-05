@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container } from "react-bootstrap"
+import { Container, Accordion, Card, Button } from "react-bootstrap"
 import "../styles/industries.scss"
 
 const Industries = () => {
@@ -86,6 +86,110 @@ const Industries = () => {
         <h2>Industries We've Helped</h2>
         <p>We provide creative solutions for various industries:</p>
       </div>
+      <Accordion defaultActiveKey="0">
+        <Card className="accordion-1">
+          <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
+            WASTE MANAGEMENT
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="0">
+            <Card.Body>
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+              <div className="industry-img">
+                <Img fluid={data.waste.childImageSharp.fluid} />
+              </div>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card className="accordion-2">
+          <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
+            CHURCHES
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="1">
+            <Card.Body>
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+              <div className="industry-img">
+                <Img fluid={data.churches.childImageSharp.fluid} />
+              </div>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card className="accordion-3">
+          <Accordion.Toggle as={Card.Header} variant="link" eventKey="2">
+            DANCE &amp; FITNESS
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="2">
+            <Card.Body>
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+              <div className="industry-img">
+                <Img fluid={data.dance.childImageSharp.fluid} />
+              </div>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card className="accordion-4">
+          <Accordion.Toggle as={Card.Header} variant="link" eventKey="3">
+            MANUFACTURING
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="3">
+            <Card.Body>
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+              <div className="industry-img">
+                <Img fluid={data.manufacturing.childImageSharp.fluid} />
+              </div>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card className="accordion-5">
+          <Accordion.Toggle as={Card.Header} variant="link" eventKey="4">
+            LOGISTICS
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="4">
+            <Card.Body>
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+              <div className="industry-img">
+                <Img fluid={data.logistics.childImageSharp.fluid} />
+              </div>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card className="accordion-6">
+          <Accordion.Toggle as={Card.Header} variant="link" eventKey="5">
+            ENGINEERING &amp; CONSTRUCTION
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="5">
+            <Card.Body>
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+              <div className="industry-img">
+                <Img fluid={data.engineering.childImageSharp.fluid} />
+              </div>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      </Accordion>
       <div className="industry">
         <div className="industry-item industry-1">
           <div className="industry-title">
