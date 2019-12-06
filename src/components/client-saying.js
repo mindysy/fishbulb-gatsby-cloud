@@ -1,27 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-//import AOS from "../../node_modules/aos/dist/aos.js"
+import AOS from "../../node_modules/aos/dist/aos.js"
 
 import { Container } from "react-bootstrap"
 import "../styles/client-saying.scss"
 import "../../node_modules/aos/dist/aos.css" // You can also use <link> for styles
 
-// class IndexPage extends React.Component {
-//   componentDidMount() {
-//     const isBrowser = typeof window !== "undefined"
-//     const AOS = isBrowser ? require("aos") : undefined
-
-//     this.aos = AOS
-//     this.aos.init()
-//   }
-
-//   componentDidUpdate() {
-//     this.aos.refresh()
-//   }
-// }
-
 const Saying = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const data = useStaticQuery(
     graphql`
       query {
