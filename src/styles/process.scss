@@ -60,6 +60,34 @@
       margin: 50px auto;
       width: 60%;
     }
+
+    .list-group-item {
+      h3 {
+        position: relative;
+
+        &:after {
+          background-color: $blue;
+          content: "";
+          height: 5px;
+          width: 0;
+          position: absolute;
+          bottom: -15px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+
+      &.active {
+        h3 {
+          &:after {
+            width: 80px;
+            -webkit-transition: width 0.5s;
+            transition: width 0.5s;
+          }
+        }
+      }
+    }
   }
 
   @media (min-width: 1200px) {

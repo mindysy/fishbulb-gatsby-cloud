@@ -132,10 +132,6 @@ const Process = () => {
 
             <Tab.Content className="process-content mt-3">
               <Tab.Pane eventKey="#discover">
-                <div className="process-img">
-                  <Img fluid={data.discover.childImageSharp.fluid} />
-                </div>
-                <h3>Discover</h3>
                 We meet with you and establish all your business’s requirements.
                 At the end of this “discover” stage we will provide you with a
                 sitemap, build documentation and even create a mockup for you so
@@ -143,29 +139,17 @@ const Process = () => {
                 right from the outset.
               </Tab.Pane>
               <Tab.Pane eventKey="#design">
-                <div className="process-img process-img-design">
-                  <Img fluid={data.design.childImageSharp.fluid} />
-                </div>
-                <h3>Design</h3>
                 The UX designer then takes the mockup and your logo &amp;
                 branding and makes it look pretty, but more importantly
                 functional and user-friendly.
               </Tab.Pane>
               <Tab.Pane eventKey="#develop">
-                <div className="process-img process-img-develop">
-                  <Img fluid={data.develop.childImageSharp.fluid} />
-                </div>
-                <h3>Develop</h3>
                 The development team takes the designs and builds your software
                 on a staging site, which you will have access to. We carry out
                 all testing at this stage to ensure everything is workings as it
                 should.
               </Tab.Pane>
               <Tab.Pane eventKey="#deploy">
-                <div className="process-img process-img-deploy">
-                  <Img fluid={data.deploy.childImageSharp.fluid} />
-                </div>
-                <h3>Deploy</h3>
                 We deploy your software on powerful, reliable and secure
                 infrastructure giving you and your team access to the software
                 from any device, wherever you are in the world.

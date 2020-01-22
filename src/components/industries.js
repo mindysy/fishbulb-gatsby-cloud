@@ -94,9 +94,13 @@ const Industries = () => {
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <ul>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
+                <li>CRM</li>
+                <li>Prospecting and Opportunities</li>
+                <li>Customer Relationship Management</li>
+                <li>Quoting &amp; invoicing</li>
+                <li>Accounting system Integration</li>
+                <li>Waste Inventory Management</li>
+                <li>Truck Scheduling</li>
               </ul>
               <div className="industry-img">
                 <Img fluid={data.waste.childImageSharp.fluid} />
@@ -111,9 +115,11 @@ const Industries = () => {
           <Accordion.Collapse eventKey="1">
             <Card.Body>
               <ul>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
+                <li>Member Management</li>
+                <li>Statics &amp; Reporting</li>
+                <li>Data Visualisation</li>
+                <li>OH&amp;S Reporting app</li>
+                <li>Accounting software integration</li>
               </ul>
               <div className="industry-img">
                 <Img fluid={data.churches.childImageSharp.fluid} />
@@ -128,9 +134,17 @@ const Industries = () => {
           <Accordion.Collapse eventKey="2">
             <Card.Body>
               <ul>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
+                <li>Customer, Student &amp; Teacher Management</li>
+                <li>Parent and Student Portal</li>
+                <li>Teacher class rolls on web app</li>
+                <li>Term Invoicing</li>
+                <li>Custom Bulk Invoicing</li>
+                <li>Class management</li>
+                <li>Timetabling</li>
+                <li>Online Enrollment</li>
+                <li>SMS &amp; Email</li>
+                <li>MailChimp Integration</li>
+                <li>Accounting software integration</li>
               </ul>
               <div className="industry-img">
                 <Img fluid={data.dance.childImageSharp.fluid} />
@@ -145,9 +159,15 @@ const Industries = () => {
           <Accordion.Collapse eventKey="3">
             <Card.Body>
               <ul>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
+                <li>GS1 Compliant Barcode and Labelling</li>
+                <li>Stock &amp; Inventory Management</li>
+                <li>CRM</li>
+                <li>Despatch &amp; Receiving System</li>
+                <li>Resource Calendar</li>
+                <li>Field staff calendar and To Do</li>
+                <li>OH&amp;S Reporting App</li>
+                <li>Reporting &amp; Data Visualisation</li>
+                <li>Accounting software integration</li>
               </ul>
               <div className="industry-img">
                 <Img fluid={data.manufacturing.childImageSharp.fluid} />
@@ -162,9 +182,15 @@ const Industries = () => {
           <Accordion.Collapse eventKey="4">
             <Card.Body>
               <ul>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
+                <li>CRM</li>
+                <li>Supplier portal</li>
+                <li>Custom Ordering Portal</li>
+                <li>Barcoding and Inventory</li>
+                <li>Quoting &amp; Ordering</li>
+                <li>Delivery notes</li>
+                <li>Purchase orders</li>
+                <li>Invoicing</li>
+                <li>Accounting software integration</li>
               </ul>
               <div className="industry-img">
                 <Img fluid={data.logistics.childImageSharp.fluid} />
@@ -179,9 +205,12 @@ const Industries = () => {
           <Accordion.Collapse eventKey="5">
             <Card.Body>
               <ul>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
+                <li>Project Tracking</li>
+                <li>QA</li>
+                <li>Customer Relationship Management</li>
+                <li>Staffing</li>
+                <li>Reporting &amp; Data Visualisation</li>
+                <li>Accounting software integration</li>
               </ul>
               <div className="industry-img">
                 <Img fluid={data.engineering.childImageSharp.fluid} />
@@ -201,9 +230,13 @@ const Industries = () => {
             <Img fluid={data.waste.childImageSharp.fluid} />
           </div>
           <ul className="industry-item__list">
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
+            <li>CRM</li>
+            <li>Prospecting and Opportunities</li>
+            <li>Customer Relationship Management</li>
+            <li>Quoting &amp; invoicing</li>
+            <li>Accounting system Integration</li>
+            <li>Waste Inventory Management</li>
+            <li>Truck Scheduling</li>
           </ul>
         </div>
         <div className="industry-item industry-2">
@@ -212,9 +245,11 @@ const Industries = () => {
             <Img fluid={data.churches.childImageSharp.fluid} />
           </div>
           <ul className="industry-item__list">
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
+            <li>Member Management</li>
+            <li>Statics &amp; Reporting</li>
+            <li>Data Visualisation</li>
+            <li>OH&amp;S Reporting app</li>
+            <li>Accounting software integration</li>
           </ul>
         </div>
         <div className="industry-item industry-3">
@@ -223,9 +258,17 @@ const Industries = () => {
             <Img fluid={data.dance.childImageSharp.fluid} />
           </div>
           <ul className="industry-item__list">
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
+            <li>Customer, Student &amp; Teacher Management</li>
+            <li>Parent and Student Portal</li>
+            <li>Teacher class rolls on web app</li>
+            <li>Term Invoicing</li>
+            <li>Custom Bulk Invoicing</li>
+            <li>Class management</li>
+            <li>Timetabling</li>
+            <li>Online Enrollment</li>
+            <li>SMS &amp; Email</li>
+            <li>MailChimp Integration</li>
+            <li>Accounting software integration</li>
           </ul>
         </div>
         <div className="industry-item industry-4">
@@ -234,9 +277,15 @@ const Industries = () => {
             <Img fluid={data.manufacturing.childImageSharp.fluid} />
           </div>
           <ul className="industry-item__list">
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
+            <li>GS1 Compliant Barcode and Labelling</li>
+            <li>Stock &amp; Inventory Management</li>
+            <li>CRM</li>
+            <li>Despatch &amp; Receiving System</li>
+            <li>Resource Calendar</li>
+            <li>Field staff calendar and To Do</li>
+            <li>OH&amp;S Reporting App</li>
+            <li>Reporting &amp; Data Visualisation</li>
+            <li>Accounting software integration</li>
           </ul>
         </div>
         <div className="industry-item industry-5">
@@ -245,9 +294,15 @@ const Industries = () => {
             <Img fluid={data.logistics.childImageSharp.fluid} />
           </div>
           <ul className="industry-item__list">
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
+            <li>CRM</li>
+            <li>Supplier portal</li>
+            <li>Custom Ordering Portal</li>
+            <li>Barcoding and Inventory</li>
+            <li>Quoting &amp; Ordering</li>
+            <li>Delivery notes</li>
+            <li>Purchase orders</li>
+            <li>Invoicing</li>
+            <li>Accounting software integration</li>
           </ul>
         </div>
         <div className="industry-item industry-6">
@@ -260,8 +315,12 @@ const Industries = () => {
             <Img fluid={data.engineering.childImageSharp.fluid} />
           </div>
           <ul className="industry-item__list">
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
+            <li>Project Tracking</li>
+            <li>QA</li>
+            <li>Customer Relationship Management</li>
+            <li>Staffing</li>
+            <li>Reporting &amp; Data Visualisation</li>
+            <li>Accounting software integration</li>
           </ul>
         </div>
       </div>
