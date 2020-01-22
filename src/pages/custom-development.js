@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import Testimonials from "../components/testimonials"
+import Process from "../components/process"
 import OurClient from "../components/our-clients"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import { Container, Row, Col } from "react-bootstrap"
@@ -221,7 +221,7 @@ const WhatWeDo = () => {
           </Row>
         </Container>
       </div>
-      <Testimonials />
+      <Process />
       <Container fluid className="bg-dark-blue text-center py-5 mt-5">
         <a href="/about" className="btn btn-blue px-4">
           FIND OUT MORE ABOUT OUR WORK

@@ -1,0 +1,70 @@
+@import "variables";
+
+.process {
+  &-bg {
+    background: url("../assets/bg-process.png") repeat-x 0 0;
+  }
+
+  &-img {
+    margin: 0 auto 30px;
+    max-height: 208px;
+    overflow: hidden;
+    width: 161px;
+
+    &-design {
+      width: 178px;
+    }
+
+    &-develop {
+      width: 196px;
+    }
+
+    &-deploy {
+      width: 171px;
+    }
+  }
+
+  &-arrow {
+    background: transparent url("../assets/arrow.png") no-repeat center center;
+    display: none;
+    height: 48px;
+    width: 142px;
+    margin-top: 85px;
+  }
+
+  &-content {
+    margin: 30px auto;
+    position: relative;
+  }
+
+  .list-group {
+    justify-content: space-around;
+
+    &-item {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    &-img {
+      margin: 0 auto 45px;
+    }
+
+    &-content {
+      margin: 50px auto;
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &-arrow {
+      display: block;
+    }
+  }
+}

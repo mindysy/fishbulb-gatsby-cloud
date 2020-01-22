@@ -150,6 +150,10 @@
       &-brand {
         margin-bottom: -1.4rem;
       }
+
+      &-light .navbar-nav .show > .nav-link {
+        color: $white;
+      }
     }
 
     .nav {

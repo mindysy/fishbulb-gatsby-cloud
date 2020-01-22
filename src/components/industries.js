@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container, Accordion, Card, Button } from "react-bootstrap"
+import { Container, Accordion, Card } from "react-bootstrap"
 import "../styles/industries.scss"
 
 const Industries = () => {
