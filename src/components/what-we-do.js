@@ -37,6 +37,13 @@ const WhatWeDo = () => {
             }
           }
         }
+        filemaker: file(relativePath: { eq: "assets/filemaker.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 2800, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   )
@@ -134,13 +141,18 @@ const WhatWeDo = () => {
             </Link>
           </Col>
         </Row>
-        <Row className="align-items-center">
-          <Col xs={12} lg={6} className="pl-0">
-            <Img fluid={data.webDesign.childImageSharp.fluid} />
+        <Row className="align-items-top pt-5 my-xl-5 position-relative">
+          <Col xs={12} lg={8} xl={9} className="pl-0 pt-lg-5 mt-xl-5">
+            <Img fluid={data.filemaker.childImageSharp.fluid} />
           </Col>
-          <Col xs={12} lg={6} xl={4} className="py-5 py-lg-0">
-            <h3>Filemaker Pro to Web Conversion</h3>
-            <p>We are experts at converting Filemaker Pro products to web.</p>
+          <Col xs={12} lg={4} xl={5} className="py-5 py-lg-0 filemaker-content">
+            <h3>FileMaker Pro Development</h3>
+            <p>
+              We have over 10 years experience developing FileMaker Pro
+              solutions, integrating them with the web and even fully converting
+              them into standalone web applications. If you're looking to take
+              your FileMaker database to the next level, we can definitely help.
+            </p>
             <Link to="/about" className="text-link">
               LEARN MORE
             </Link>
