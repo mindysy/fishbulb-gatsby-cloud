@@ -1,11 +1,23 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Typed from "../../node_modules/typed.js/src/typed"
 
 import { Container } from "react-bootstrap"
 import "../styles/banner.scss"
 
 const Banner = () => {
+  useEffect(() => {
+    new Typed("#typed", {
+      stringsElement: "#typed-strings",
+      strings: ["Streamline", "Systemise", "Automate", "Integrate"],
+      typeSpeed: 40,
+      backSpeed: 60,
+      smartBackspace: true,
+      loop: true,
+    })
+  }, [])
+
   const data = useStaticQuery(
     graphql`
       query {
@@ -32,7 +44,9 @@ const Banner = () => {
                 Custom Software <br />
                 for Your Business
               </div>
-              <p>We Integrate. We Systemise. We Automate. We Streamline.</p>
+              <div className="banner-typed">
+                We <span id="typed"></span>
+              </div>
               <Link to="/about" className="btn btn-blue btn-blue-glow">
                 LEARN MORE
               </Link>
