@@ -92,12 +92,12 @@ const Saying = () => {
           data-aos="fade-in"
           data-aos-offset="450"
         >
-          “Andrew and the team are really easy to work with. They're honest,
-          flexible and reliable. The custom software system and supplier portal
-          they've created is easy to use and has allowed us to grow quickly
-          whilst keeping our admin costs in check.”
-          <span>Simon Cook</span>
-          Director, Enso International
+          “Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.”
+          <span>HQ Corp</span>
+          Director of HQ Corp
         </div>
 
         <div
@@ -156,11 +156,12 @@ const Saying = () => {
           data-aos="fade-in"
           data-aos-offset="500"
         >
-          “Having worked with Fishbulb Solutions for over 10 years we can
-          confidently assure you they’re a custom software development partner
-          you can trust.”
-          <span>Jock Germany</span>
-          Director, Environmental Treatment Solutions
+          “Andrew and the team are really easy to work with. They're honest,
+          flexible and reliable. The custom software system and supplier portal
+          they've created is easy to use and has allowed us to grow quickly
+          whilst keeping our admin costs in check.”
+          <span>Simon Cook</span>
+          Director, Enso International
         </div>
         {/* End Client Testimony Tooltip */}
       </div>
