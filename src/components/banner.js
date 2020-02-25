@@ -39,10 +39,10 @@ const Banner = () => {
           <Container className="banner-content">
             <div>
               <div className="banner-title">
-                Purpose built
+                Custom-made
                 <br />
-                Custom Software <br />
-                for Your Business
+                websites, apps and software <br />
+                for your business
               </div>
               <div className="banner-typed">
                 We <span id="typed"></span>
@@ -59,15 +59,14 @@ const Banner = () => {
       </Container>
       <Container className="text-center pb-5">
         <h2>
-          Purpose-driven Custom Software Development and Web Development in
-          Sydney, Melbourne and Perth
+          Custom Software Development and Web Development in Sydney, Melbourne,
+          Brisbane and Perth.
         </h2>
         <p>
-          We create affordable solutions that bring your company's goals to
-          life. These automated applications can help you run business
-          efficiently and effectively.
+          We create affordable solutions that bring the goals of your business
+          to life.
         </p>
-        <p>We listen, we discover, we develop and we deliver</p>
+        <p>We listen, we plan, we develop and we deliver.</p>
       </Container>
     </React.Fragment>
   )

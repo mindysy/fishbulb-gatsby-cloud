@@ -180,14 +180,14 @@ const WhatWeDo = () => {
             <Col xs={12} lg={{ span: 5, order: 1 }} xl={{ offset: 1 }}>
               <h3 className="mb-2">Integrate</h3>
               <p>
-                The only way to harness the full advantages software can bring
-                your organisation is to tailor it to suit your business’ unique
-                operations. However, there are some applications we’d strongly
-                advise integrating with. For example, if you’re using an
-                accounting platform such as MYOB, Xero, Quickbooks or Saasu, it
-                would be much more cost effective and beneficial to create a
-                seamless connection with their platform letting them do what
-                they do best.
+                To harness the full advantages custom software development can
+                bring your business it needs to be tailored to suit your
+                business’s unique requirements. One cost effective way to
+                achieve this is to integrate with software platforms you already
+                know and use such as MYOB, Xero, Quickbooks or MailChimp, just
+                to name a few. Why reinvent the wheel when we can create a
+                seamless link between your custom system and the web
+                applications you already know and love.
               </p>
             </Col>
           </Row>
